@@ -1,0 +1,9 @@
+[Unit]
+Description=Service zum Löschen temporärer Dateien
+
+[Service]
+Type=oneshot
+ExecStart=/bin/rm -rf /tmp/*
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,10 @@
+[Unit]
+Description=Führt script1.sh aus
+
+[Service]
+ExecStart=/home/ubuntu/script1.sh
+WorkingDirectory=/home/ubuntu/
+User=ubuntu
+
+[Install]
+WantedBy=multi-user.target
