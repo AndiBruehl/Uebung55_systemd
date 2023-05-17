@@ -1,0 +1,11 @@
+[Unit]
+Description=Führt script1.sh aus
+
+[Service]
+ExecStart=/home/ubuntu/script1.sh
+WorkingDirectory=/home/ubuntu/
+User=ubuntu
+Environment="MY_ENV_VAR=Dies ist ein Test"
+
+[Install]
+WantedBy=multi-user.target
